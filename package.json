@@ -1,0 +1,18 @@
+{
+  "name": "bassjs",
+  "version": "1.0.0",
+  "description": "Styles object with a modular scale, font stacks, and colors",
+  "main": "index.js",
+  "keywords": [
+    "colors",
+    "modular-scale",
+    "styles"
+  ],
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "dependencies": {
+    "color": "^0.10.1",
+    "colors.css": "^2.3.0",
+    "simple-modular-scale": "^1.0.2"
+  }
+}
