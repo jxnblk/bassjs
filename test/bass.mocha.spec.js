@@ -65,5 +65,17 @@ describe('bass', () => {
     assert.deepEqual(bass.x, initial.x)
   })
 
+  context('browser', () => {
+
+    if (typeof window === 'undefined') {
+      return false
+    }
+
+    it('should be in a windowed environment', () => {
+      assert(window)
+    })
+
+  })
+
 })
 

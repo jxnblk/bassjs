@@ -3,9 +3,10 @@ var webpack = require('webpack')
 
 var configuration = {
   browsers: [
-    // 'Firefox',
+    'Firefox',
+    'Chrome',
     // 'Chrome_xs',
-    'Chrome_sm',
+    // 'Chrome_sm',
     // 'Chrome_md',
     // 'Chrome_lg'
   ],
@@ -29,7 +30,8 @@ var configuration = {
     }
   },
 
-  singleRun: true,
+  // singleRun: true,
+  autoWatch: true,
 
   files: [
     'index.js'
