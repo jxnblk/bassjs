@@ -190,9 +190,14 @@ describe('bass', () => {
     })
 
     it('setCol should change the widths', () => {
-      custom = [ '25%' ]
+      custom = [ '0', '25%' ]
       bass.setCol(custom)
       assert.deepEqual(bass.col, custom)
+    })
+
+    it('setColumns should recalculate widths', () => {
+      bass.setColumns(8)
+      assert.equal(bass.col[1], (1 / 8) + '%')
     })
 
     it('should keep all custom values', () => {
