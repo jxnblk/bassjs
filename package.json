@@ -2,7 +2,7 @@
   "name": "bassjs",
   "version": "1.0.0",
   "description": "Styles object with a modular scale, font stacks, and colors",
-  "main": "index.js",
+  "main": "dist/bass.js",
   "keywords": [
     "colors",
     "modular-scale",
@@ -17,6 +17,7 @@
     "spectralize": "^1.0.0"
   },
   "devDependencies": {
+    "ava": "^0.2.0",
     "babel": "^5.8.23",
     "babel-loader": "^5.3.2",
     "json-loader": "^0.5.2",
@@ -26,6 +27,7 @@
     "webpack-dev-server": "^1.10.1"
   },
   "scripts": {
-    "examples": "webpack-dev-server --progress --colors --config examples/webpack.config.js"
+    "prepublish": "babel lib --out-dir dist",
+    "test": "ava test"
   }
 }
