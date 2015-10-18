@@ -35,6 +35,6 @@
     "prepublish": "babel lib --out-dir dist",
     "mocha": "mocha --compilers js:babel/register test",
     "karma": "karma start test/karma.config.js",
-    "test": "npm run mocha && npm run karma"
+    "test": "npm run mocha"
   }
 }
