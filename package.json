@@ -34,7 +34,18 @@
   "scripts": {
     "prepublish": "babel lib --out-dir dist",
     "mocha": "mocha --compilers js:babel/register test",
-    "karma": "./node_modules/.bin/karma start test/karma.config.js",
+    "karma": "karma start test/karma.config.js",
     "test": "npm run mocha"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jxnblk/bassjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jxnblk/bassjs/issues"
+  },
+  "homepage": "https://github.com/jxnblk/bassjs#readme"
 }
