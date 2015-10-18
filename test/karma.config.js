@@ -3,7 +3,7 @@ var webpack = require('webpack')
 
 var configuration = {
   browsers: [
-    'Firefox',
+    // 'Firefox',
     'Chrome',
     // 'Chrome_xs',
     // 'Chrome_sm',
