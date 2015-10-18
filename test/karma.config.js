@@ -3,8 +3,8 @@ var webpack = require('webpack')
 
 var configuration = {
   browsers: [
-    // 'Firefox',
-    'Chrome',
+    'Firefox',
+    // 'Chrome',
     // 'Chrome_xs',
     // 'Chrome_sm',
     // 'Chrome_md',
@@ -30,8 +30,8 @@ var configuration = {
     }
   },
 
-  singleRun: true,
-  // autoWatch: true,
+  // singleRun: true,
+  autoWatch: true,
 
   files: [
     'index.js'
@@ -91,6 +91,8 @@ if (process.env.TRAVIS) {
   configuration.browsers = [
     'Firefox'
   ]
+  configuration.singleRun = true
+  configuration.autoWatch = false
 }
 
 module.exports = function (config) {

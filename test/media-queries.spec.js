@@ -4,7 +4,10 @@ import mq from '../lib/media-queries'
 
 describe('media-queries', () => {
 
-  it('should contain an object of breakpoints')
+  it('should return an object of breakpoints', () => {
+    const queries = mq.get()
+    assert.equal(typeof queries, 'object')
+  })
 
   it('should have an add method', () => {
     assert.equal(typeof mq.add, 'function')
@@ -43,6 +46,16 @@ describe('media-queries', () => {
     })
 
     it('should trigger an update when media changes')
+    /*
+      // Unsure of how to trigger this...
+      let handled = false
+      mq.onUpdate((e) => { handled = true })
+      const resize = new Event('resize')
+      window.resizeTo(256, 512)
+      window.dispatchEvent(resize)
+      // assert.equal(handled, true)
+    })
+    */
 
     it('should add a media query', () => {
       mq.add('sm', '(min-width: 1em)')

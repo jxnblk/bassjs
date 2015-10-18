@@ -257,13 +257,13 @@ describe('bass', () => {
     it('should style font-family', () => {
       div.style.fontFamily = bass.font
       computed = getStyle()
-      assert.equal(computed.fontFamily, bass.font)
+      assert(computed.fontFamily.match(/^\-apple\-system/))
     })
 
     it('should style padding', () => {
       div.style.padding = bass.x[4] + 'px'
       computed = getStyle()
-      assert.equal(computed.padding, bass.x[4] + 'px')
+      assert.equal(computed.paddingTop, bass.x[4] + 'px')
     })
 
     it('should style color', () => {
