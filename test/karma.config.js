@@ -36,11 +36,14 @@ var configuration = {
   ],
 
   frameworks: [
+    'mocha'
   ],
 
   plugins: [
     'karma-chrome-launcher',
     'karma-firefox-launcher',
+    'karma-mocha',
+    'karma-mocha-reporter',
     'karma-webpack'
   ],
 
@@ -48,22 +51,22 @@ var configuration = {
     'index.js': [ 'webpack' ]
   },
 
-  reporters: [ 'dots' ],
+  reporters: [ 'mocha' ],
 
   webpack: {
     resolve: {
-      extensions: ['', '.js', '.jsx']
+      extensions: ['', '.js', '.jsx', 'json']
     },
     module: {
       loaders: [
         {
           test: /\.jsx?$/,
           exclude: /node_modules/,
-          loader: 'babel-loader'
+          loaders: ['babel-loader']
         },
         {
           test: /\.json$/,
-          loader: 'json-loader'
+          loader: 'json'
         }
       ]
     }
@@ -71,6 +74,13 @@ var configuration = {
 
   webpackMiddleware: {
     noInfo: true
+  },
+
+  client: {
+    mocha: {
+      reporter: 'html',
+      ui: 'bdd'
+    }
   }
 
 }
