@@ -30,8 +30,8 @@ var configuration = {
     }
   },
 
-  // singleRun: true,
-  autoWatch: true,
+  singleRun: true,
+  // autoWatch: true,
 
   files: [
     'index.js'
