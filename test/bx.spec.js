@@ -1,7 +1,6 @@
 
 import assert from 'assert'
-import bx from '../lib/bx'
-import bass from '../lib/bass'
+import { bx, bass } from '../lib'
 
 describe('bx', () => {
 

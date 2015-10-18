@@ -2,7 +2,7 @@
   "name": "bassjs",
   "version": "1.0.0",
   "description": "Styles object with a modular scale, font stacks, and colors",
-  "main": "dist/bass.js",
+  "main": "dist/index.js",
   "keywords": [
     "colors",
     "modular-scale",
