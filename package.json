@@ -33,7 +33,6 @@
   },
   "scripts": {
     "prepublish": "babel lib --out-dir dist",
-    "test": "karma start test/karma.config.js",
-    "ava": "ava test"
+    "test": "karma start test/karma.config.js"
   }
 }

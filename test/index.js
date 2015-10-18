@@ -1,6 +1,5 @@
 
-console.log('karma index')
-var context = require.context('.', true, /.+\.mocha\.spec\.jsx?$/);
+var context = require.context('.', true, /.+\.spec\.jsx?$/);
 context.keys().forEach(context);
 module.exports = context;
 
