@@ -1,5 +1,6 @@
 
-var context = require.context('.', true, /.+\.spec\.jsx?$/);
-context.keys().forEach(context);
-module.exports = context;
+import './bass.spec'
+import './bx.spec'
+import './media-queries.spec'
+import './exports.spec'
 

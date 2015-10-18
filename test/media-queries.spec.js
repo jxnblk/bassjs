@@ -29,7 +29,7 @@ describe('media-queries', () => {
 
   it('should remove the media query', () => {
     mq.remove('sm')
-    assert.throws(mq.sm)
+    assert.equal(mq.sm, undefined)
   })
 
   describe('browser', () => {

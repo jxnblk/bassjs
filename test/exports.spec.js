@@ -16,7 +16,13 @@ import {
   keys
 } from '../lib'
 
+import root from '../lib'
+
 describe('exports', () => {
+
+  it('should export bass as default', () => {
+    assert(root)
+  })
 
   it('should export bass', () => {
     assert(bass)

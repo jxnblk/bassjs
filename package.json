@@ -33,6 +33,8 @@
   },
   "scripts": {
     "prepublish": "babel lib --out-dir dist",
-    "test": "karma start test/karma.config.js"
+    "mocha": "mocha --compilers js:babel/register test",
+    "karma": "karma start test/karma.config.js",
+    "test": "npm run mocha && npm run karma"
   }
 }
