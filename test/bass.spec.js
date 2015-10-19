@@ -8,11 +8,6 @@ const initial = {
   x: [0, 8, 16, 32, 64],
   h: [48, 32, 24, 20, 16, 14, 12],
   font: '-apple-system, system, sans-serif',
-  breakpoints: {
-    sm: '(min-width: 32em)',
-    md: '(min-width: 48em)',
-    lg: '(min-width: 64em)'
-  },
   colors: colorsCss,
   darken: [
     'rgba(0, 0, 0, 0)',
@@ -67,10 +62,6 @@ describe('bass', () => {
       assert.equal(typeof bass.font, 'string')
     })
 
-    it('breakpoints should be an object', () => {
-      assert.equal(typeof bass.breakpoints, 'object')
-    })
-
     it('colors should be an object', () => {
       assert.equal(typeof bass.colors, 'object')
     })
@@ -103,10 +94,6 @@ describe('bass', () => {
 
     it('font should match default values', () => {
       assert.equal(bass.font, initial.font)
-    })
-
-    it('breakpoints should match default values', () => {
-      assert.deepEqual(bass.breakpoints, initial.breakpoints)
     })
 
     it('colors should match default values', () => {
@@ -159,12 +146,6 @@ describe('bass', () => {
       assert.equal(bass.font, custom)
     })
 
-    it('setBreakpoints should change the breakpoints', () => {
-      custom = { sm: '(min-width: 16em)' }
-      bass.setBreakpoints(custom)
-      assert.deepEqual(bass.breakpoints, custom)
-    })
-
     it('setColors should change the colors', () => {
       custom = { blue: '#0cf' }
       bass.setColors(custom)
@@ -204,7 +185,6 @@ describe('bass', () => {
       assert.notDeepEqual(bass.x, initial.x)
       assert.notDeepEqual(bass.h, initial.h)
       assert.notDeepEqual(bass.font, initial.font)
-      assert.notDeepEqual(bass.breakpoints, initial.breakpoints)
       assert.notDeepEqual(bass.colors, initial.colors)
       assert.notDeepEqual(bass.darken, initial.darken)
       assert.notDeepEqual(bass.lighten, initial.lighten)
@@ -217,7 +197,6 @@ describe('bass', () => {
       assert.deepEqual(bass.x, initial.x)
       assert.deepEqual(bass.h, initial.h)
       assert.deepEqual(bass.font, initial.font)
-      assert.deepEqual(bass.breakpoints, initial.breakpoints)
       assert.deepEqual(bass.colors, initial.colors)
       assert.deepEqual(bass.darken, initial.darken)
       assert.deepEqual(bass.lighten, initial.lighten)

@@ -6,7 +6,6 @@ import {
   x,
   h,
   font,
-  breakpoints,
   colors,
   darken,
   lighten,
@@ -38,10 +37,6 @@ describe('exports', () => {
 
   it('should export font', () => {
     assert(font)
-  })
-
-  it('should export breakpoints', () => {
-    assert(breakpoints)
   })
 
   it('should export colors', () => {

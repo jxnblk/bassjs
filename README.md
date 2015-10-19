@@ -64,7 +64,6 @@ The core module exports an instance of the private `Bass` class, which stores va
 - `x` - array of ascending numbers for using with margin, padding and other spacing
 - `h` - array of descending numbers for use with font-size
 - `font` - string for font-family
-- `breakpoints` - object of media queries (currently unused)
 - `colors` - object of colors
 - `darken` - array of black rgba colors for darkening
 - `lighten` - array of white rgba colors for lightening
@@ -79,7 +78,6 @@ See [`lib/defaults.js`](lib/defaults.js) for default values.
 - `setScale(Array)` - sets a custom `x` scale
 - `setTypeScale(Array)` - sets a custom `h` scale
 - `setFont(string)` - sets a custom `font`
-- `setBreakpoints(Object)` - sets custom `breakpoints`
 - `setColors(Object)` - sets custom `colors`
 - `setDarken(Array)` - sets a custom `darken` array
 - `setLighten(Array)` - sets a custom `lighten` array
