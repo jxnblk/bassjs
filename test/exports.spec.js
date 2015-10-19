@@ -1,8 +1,8 @@
 
 import assert from 'assert'
 
+import bass from '../lib'
 import {
-  bass,
   x,
   h,
   font,
@@ -15,15 +15,9 @@ import {
   keys
 } from '../lib'
 
-import root from '../lib'
-
 describe('exports', () => {
 
   it('should export bass as default', () => {
-    assert(root)
-  })
-
-  it('should export bass', () => {
     assert(bass)
   })
 
