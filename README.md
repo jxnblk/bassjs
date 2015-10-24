@@ -134,7 +134,7 @@ The `bx` function also provides these helper shortcuts:
 - `'break-word'` - `{ wordWrap: 'break-word' }`
 - `truncate` - `{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }`
 - `'left-align'` - `{ textAlign: 'left' }`
-- `'right-align'` - `{ textAlign: 'right' },
+- `'right-align'` - `{ textAlign: 'right' }`
 - `center` - `{ textAlign: 'center' }`
 - `justify` - `{textAlign: 'justify' }`
 - `inline` - `{ display: 'inline' }`
