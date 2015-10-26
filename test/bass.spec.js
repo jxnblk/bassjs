@@ -2,7 +2,7 @@
 import assert from 'assert'
 import Color from 'color'
 import colorsCss from 'colors.css'
-import { bass } from '../lib'
+import bass from '../lib'
 
 const initial = {
   x: [0, 8, 16, 32, 64],

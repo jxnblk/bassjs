@@ -11,12 +11,12 @@ npm i bassjs
 ```js
 // Example
 import React from 'react'
-import { h, x, colors } from 'bassjs'
+import bass from 'bassjs'
 
 class Heading extends React.Component {
   render() {
     const { children, color } = this.props
-
+    const { h, x, colors } = bass
     const style = {
       fontSize: h[1],
       marginTop: x[2],
