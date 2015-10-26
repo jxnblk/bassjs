@@ -1,6 +1,6 @@
 {
   "name": "bassjs",
-  "version": "2.0.0-beta2",
+  "version": "2.0.0-beta3",
   "description": "Styles object with a modular scale, font stacks, and colors",
   "main": "dist/index.js",
   "keywords": [
