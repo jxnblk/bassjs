@@ -2,6 +2,8 @@
 
 Javascript styles object including helper methods for use with React or similar templating systems.
 
+[![Build Status](https://travis-ci.org/jxnblk/bassjs.svg?branch=master)](https://travis-ci.org/jxnblk/bassjs)
+
 ## Getting Started
 
 ```bash
