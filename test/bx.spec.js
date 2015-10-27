@@ -287,6 +287,37 @@ describe('bx', () => {
         const style = bx('right')
         assert.equal(style.float, 'right')
       })
+
+      it('should return "rounded" from the bass module', () => {
+        const style = bx('rounded')
+        assert.equal(style.borderRadius, bass.radius)
+      })
+
+      it('should return "border" from the bass module', () => {
+        const style = bx('border')
+        assert.equal(style.border, '1px solid')
+      })
+
+      it('should return "border-top" from the bass module', () => {
+        const style = bx('border-top')
+        assert.equal(style.borderTop, '1px solid')
+      })
+
+      it('should return "border-right" from the bass module', () => {
+        const style = bx('border-right')
+        assert.equal(style.borderRight, '1px solid')
+      })
+
+      it('should return "border-bottom" from the bass module', () => {
+        const style = bx('border-bottom')
+        assert.equal(style.borderBottom, '1px solid')
+      })
+
+      it('should return "border-left" from the bass module', () => {
+        const style = bx('border-left')
+        assert.equal(style.borderLeft, '1px solid')
+      })
+
     })
   })
 
