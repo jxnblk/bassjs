@@ -295,7 +295,8 @@ describe('bx', () => {
 
       it('should return "border" from the bass module', () => {
         const style = bx('border')
-        assert.equal(style.border, '1px solid')
+        assert.equal(style.borderStyle, 'solid')
+        assert.equal(style.borderWidth, 1)
       })
 
       it('should return "border-top" from the bass module', () => {
