@@ -159,8 +159,4 @@ npm test
 
 MIT License
 
----
-TO DO:
-- [ ] alias lighten and darken
-- [ ] border-color shortcuts
 
